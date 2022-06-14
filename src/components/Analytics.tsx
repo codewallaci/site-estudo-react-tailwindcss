@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import Laptop from "../assets/laptop.jpg";
 
 export const Analytics = () => {
   return (
-    <div className="w-full py-16 px-4 bg-white">
+    <div id="about" className="w-full py-16 px-4 bg-white">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img className="w-[500px] mx-auto my-4" src={Laptop} alt="laptop" />
         <div className="flex flex-col justify-center">
@@ -22,7 +23,9 @@ export const Analytics = () => {
             className="w-[200px] my-6 mx-auto py-2 bg-[#009bd6]
            text-white font-medium rounded-md md:mx-0"
           >
-            Comprar
+            <Link to="price" spy={true} smooth={true}>
+              PLANOS
+            </Link>
           </button>
         </div>
       </div>

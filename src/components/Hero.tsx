@@ -1,9 +1,10 @@
 import React from "react";
 import Typed from "react-typed";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
-    <div className="text-white">
+    <div id="home" className=" text-white">
       <div className="mt-[-96px] w-full h-screen max-auto text-center flex flex-col justify-center items-center">
         <p className="text-[#009bd6] uppercase font-bold p-2">
           Somos apaixonados por tecnologia
@@ -32,7 +33,9 @@ export const Hero = () => {
           className="w-[200px] my-6 mx-auto py-2 bg-[#00b8ff]
              text-white font-medium rounded-md"
         >
-          Comprar
+          <Link to="price" spy={true} smooth={true}>
+            PLANOS
+          </Link>
         </button>
       </div>
     </div>

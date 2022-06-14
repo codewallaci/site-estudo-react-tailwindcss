@@ -6,9 +6,12 @@ import Triple from "../assets/triple.png";
 
 export const Cards = () => {
   return (
-    <div className="w-full py-[10rem] px-4 bg-white">
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8">
-        <div className="w-full shadow-xl hover:shadow-blue-500 flex flex-col p-4 m-4 rounded-lg hover:scale-105 duration-300 border border-blue-900 hover:border-blue-300">
+    <div className="w-full py-[10rem] bg-white">
+      <div
+        id="price"
+        className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8"
+      >
+        <div className="w-[90%] shadow-xl hover:shadow-blue-500 flex flex-col p-4 m-4 mx-[20px] rounded-lg hover:scale-105 duration-300 border border-blue-900 hover:border-blue-300">
           <img
             className="w-20 mx-auto mt-1 bg-transparent"
             src={Single}
@@ -28,7 +31,7 @@ export const Cards = () => {
             Iniciar avaliação
           </button>
         </div>
-        <div className="w-full shadow-xl hover:shadow-blue-500 flex flex-col p-4 m-4 rounded-lg hover:scale-105 duration-300 border border-blue-900 hover:border-blue-300">
+        <div className="w-[90%] shadow-xl hover:shadow-blue-500 flex flex-col p-4 m-4 mx-[20px]  rounded-lg hover:scale-105 duration-300 border border-blue-900 hover:border-blue-300">
           <img
             className="w-20 mx-auto mt-1 bg-transparent"
             src={Double}
@@ -48,13 +51,18 @@ export const Cards = () => {
             Iniciar avaliação
           </button>
         </div>
-        <div className="w-full shadow-xl hover:shadow-blue-500 flex flex-col p-4 m-4 rounded-lg hover:scale-105 duration-300 border border-blue-900 hover:border-blue-300">
+        <div className="w-[90%] shadow-xl hover:shadow-blue-500 flex flex-col p-4 m-4 mx-[20px] rounded-lg hover:scale-105 duration-300 border border-blue-900 hover:border-blue-300">
           <img
             className="w-20 mx-auto mt-1 bg-transparent"
             src={Triple}
             alt=""
           />
-          <h2 className="text-2xl font-bold text-center py-8">Três usuário</h2>
+          <h2 className="text-2xl font-bold text-center py-4">Três usuário</h2>
+          <div className="flex justify-center items-center">
+            <div className=" bg-blue-700 w-[70%] rounded-md py-2">
+              <p className="text-center text-white font-bold">MELHOR PLANO</p>
+            </div>
+          </div>
           <p className="text-center text-4xl font-bold">R$199,99</p>
           <div className="text-center font-medium">
             <p className="py-2 border-b mx-8 mt-8">1000 GB de armazenamento</p>
